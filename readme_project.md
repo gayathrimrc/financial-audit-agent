@@ -19,3 +19,16 @@ This project demonstrates how data engineering design patterns (state orchestrat
    cd financial-audit-agent
    python3 -m venv .venv
    source .venv/bin/activate
+   
+2. Install production dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Configure your keys:
+   ```bash
+   cp .env.example .env
+   # Open .env and populate your OpenAI and Snowflake account credentials
+
+4. Run the application pipeline:
+   ```bash
+    python -m src.graph
